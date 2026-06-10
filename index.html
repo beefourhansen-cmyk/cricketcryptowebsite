@@ -18,13 +18,14 @@
   }
   
   body {
-    margin: 0;
-    padding: 0;
-    background: var(--obsidian);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: var(--text-main);
-    line-height: 1.7;
-  }
+  margin: 0;
+  padding: 0;
+  /* A deep, darkened variant of your Indian Blue variable */
+  background: #001f3f; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-main);
+  line-height: 1.7;
+}
 
   .container {
     max-width: 800px;
@@ -100,18 +101,22 @@
     opacity: 0.95;
   }
 
-  /* CARD WRAPPER (SMOKED GLASS) */
-  .content-card {
-    background: var(--smoked-glass);
-    border: 1px solid rgba(0, 76, 153, 0.3);
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 32px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  }
-
+  /* CARD WRAPPER (SMOKED GLASS WITH GOLD AURA) */
+.content-card {
+  background: var(--smoked-glass);
+  /* Tinted the border slightly with gold to catch the light */
+  border: 1px solid rgba(255, 215, 0, 0.15); 
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Combined a deep dark shadow for weight, with a soft, dreamy gold ambient glow */
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.6), 
+    0 0 30px rgba(255, 215, 0, 0.08);
+}
   h2 {
     font-size: 22px;
     font-weight: 800;
